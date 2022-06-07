@@ -68,6 +68,62 @@
   </PropertyGroup>
   <Import Project="$(OpenSpanPath)\OpenSpan.targets" />
   <ItemGroup>
+    <Reference Include="OpenSpan.Adapters">
+      <Private>False</Private>
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Adapters.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Virtual">
+      <Private>False</Private>
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Adapters.Virtual.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Web.Universal">
+      <Private>False</Private>
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Adapters.Web.Universal.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Web.WebBase">
+      <Private>False</Private>
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Adapters.Web.WebBase.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.Adapters.Windows">
+      <Private>False</Private>
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Adapters.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.ApplicationFramework">
+      <Private>False</Private>
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.ApplicationFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSpan.OCR, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.OCR.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Recording, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Recording.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Virtual.Interfaces, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Virtual.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Virtual.Web.Interfaces, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Virtual.Web.Interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Remoting, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.Remoting.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.SharedMemory.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.SharedMemory.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Windows.Broker.Interop, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.Windows.Broker.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
@@ -97,6 +153,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adapters\ChromeAdapter.os">
+      <SubType>Component</SubType>
+      <Id>UniversalWebAdapter-8DA4883BC275FE4</Id>
+    </Compile>
+    <Folder Include="Adapters" />
     <Folder Include="Properties\" />
     <Folder Include="Public Automations" />
     <Compile Include="Automation1.os">
@@ -106,5 +167,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\ImportTypeMap.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Adapters\ChromeAdapter.res">
+      <DependentUpon>Adapters\ChromeAdapter.os</DependentUpon>
+      <Deployment>DoNotDeploy</Deployment>
+    </Content>
   </ItemGroup>
 </Project>
