@@ -41,6 +41,7 @@
   </ComponentInfo>
   <Component Version="1.0">
     <OpenSpan.Adapters.Web.Universal.UniversalWebAdapter Name="ChromeAdapter" Id="UniversalWebAdapter-8DA4883BC275FE4">
+      <StartOnProjectStart Value="False" />
       <StartPage Value="https://www.linkedin.com/home" />
       <Content Name="Controls">
         <Items>
@@ -68,6 +69,88 @@
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.WebBase.Controls.Link>
+                <OpenSpan.Adapters.Web.WebBase.Controls.Form Name="LoginForm" Id="Form-8DA561957AC8269">
+                  <DummyPropertyToDetectReplaceUndo Value="0" />
+                  <ForwardObjectExplorerEvent Value="True" />
+                  <MatchingIndex Value="0" />
+                  <TagName Value="FORM" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlFormElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                  <UseElementId Value="False" />
+                  <Content Name="Controls">
+                    <Items>
+                      <OpenSpan.Adapters.Web.WebBase.Controls.TextBox Name="sessionUsername" Id="TextBox-8DA561957A259C0">
+                        <DummyPropertyToDetectReplaceUndo Value="0" />
+                        <ElementId Value="session_key" />
+                        <ForwardObjectExplorerEvent Value="True" />
+                        <MatchingIndex Value="1" />
+                        <TagName Value="INPUT" />
+                        <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlInputTextElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                        <UseElementId Value="True" />
+                        <Content Name="MatchRules">
+                          <Items>
+                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule24" Id="VirtualPropertyMatchRule-8DA561957D3883B">
+                              <PropertyName Value="type" />
+                              <Text Value="Simple|True|(User Culture)|text" />
+                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule25" Id="VirtualPropertyMatchRule-8DA561957DF6706">
+                              <PropertyName Value="id" />
+                              <Text Value="Simple|True|(User Culture)|session_key" />
+                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                          </Items>
+                        </Content>
+                      </OpenSpan.Adapters.Web.WebBase.Controls.TextBox>
+                      <OpenSpan.Adapters.Web.WebBase.Controls.TextBox Name="Password" Id="TextBox-8DA561964761639">
+                        <DummyPropertyToDetectReplaceUndo Value="0" />
+                        <ElementId Value="session_password" />
+                        <ForwardObjectExplorerEvent Value="True" />
+                        <MatchingIndex Value="2" />
+                        <TagName Value="INPUT" />
+                        <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlInputPasswordElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                        <UseElementId Value="True" />
+                        <Content Name="MatchRules">
+                          <Items>
+                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule26" Id="VirtualPropertyMatchRule-8DA561964824978">
+                              <PropertyName Value="type" />
+                              <Text Value="Simple|True|(User Culture)|password" />
+                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule27" Id="VirtualPropertyMatchRule-8DA5619648EDC9C">
+                              <PropertyName Value="id" />
+                              <Text Value="Simple|True|(User Culture)|session_password" />
+                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                          </Items>
+                        </Content>
+                      </OpenSpan.Adapters.Web.WebBase.Controls.TextBox>
+                      <OpenSpan.Adapters.Web.WebBase.Controls.BasicButton Name="Sign_in" Id="BasicButton-8DA5619686750FE">
+                        <DummyPropertyToDetectReplaceUndo Value="0" />
+                        <ForwardObjectExplorerEvent Value="True" />
+                        <MatchingIndex Value="1" />
+                        <TagName Value="BUTTON" />
+                        <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlButtonElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                        <UseElementId Value="False" />
+                        <Content Name="MatchRules">
+                          <Items>
+                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule28" Id="VirtualPropertyMatchRule-8DA561968711171">
+                              <PropertyName Value="type" />
+                              <Text Value="Simple|True|(User Culture)|submit" />
+                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                          </Items>
+                        </Content>
+                      </OpenSpan.Adapters.Web.WebBase.Controls.BasicButton>
+                    </Items>
+                  </Content>
+                  <Content Name="MatchRules">
+                    <Items>
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule22" Id="VirtualPropertyMatchRule-8DA561957BD4163">
+                        <PropertyName Value="action" />
+                        <Text Value="Simple|True|(User Culture)|https://www.linkedin.com/uas/login-submit" />
+                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule23" Id="VirtualPropertyMatchRule-8DA561957C62BCA">
+                        <PropertyName Value="method" />
+                        <Text Value="Simple|True|(User Culture)|post" />
+                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                    </Items>
+                  </Content>
+                </OpenSpan.Adapters.Web.WebBase.Controls.Form>
               </Items>
             </Content>
             <Content Name="MatchRules">
@@ -83,146 +166,6 @@
               </Items>
             </Content>
           </OpenSpan.Adapters.Web.WebBase.Controls.WebPage>
-          <OpenSpan.Adapters.Web.WebBase.Controls.WebPage Name="LinkedIn_Login_Sign_in" Id="WebPage-8DA48847B335E0F">
-            <DummyPropertyToDetectReplaceUndo Value="0" />
-            <ForwardObjectExplorerEvent Value="True" />
-            <IsGlobal Value="True" />
-            <MatchingIndex Value="0" />
-            <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlDocumentTarget, OpenSpan.Adapters.Web.WebBase" />
-            <Content Name="Controls">
-              <Items>
-                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="Sign_in_using_another_account" Id="WebControl-8DA48847B28580D">
-                  <DummyPropertyToDetectReplaceUndo Value="0" />
-                  <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="6" />
-                  <TagName Value="P" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlElementTarget, OpenSpan.Adapters.Web.WebBase" />
-                  <UseElementId Value="False" />
-                  <Content Name="MatchRules">
-                    <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule6" Id="VirtualPropertyMatchRule-8DA48847B4629C7">
-                        <PropertyName Value="openspan_path" />
-                        <Text Value="Simple|True|(User Culture)|P,DIV,DIV,DIV,DIV,MAIN,DIV,BODY,HTML" />
-                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                    </Items>
-                  </Content>
-                </OpenSpan.Adapters.Web.WebBase.Controls.WebControl>
-              </Items>
-            </Content>
-            <Content Name="MatchRules">
-              <Items>
-                <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule4" Id="VirtualPropertyMatchRule-8DA48847B371451">
-                  <PropertyName Value="url" />
-                  <Text Value="Simple|True|(User Culture)|https://www.linkedin.com/login?fromSignIn=true&amp;trk=guest_homepage-basic_nav-header-signin" />
-                </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule5" Id="VirtualPropertyMatchRule-8DA48847B3B2968">
-                  <PropertyName Value="title" />
-                  <Text Value="Simple|True|(User Culture)|LinkedIn Login, Sign in | LinkedIn" />
-                </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-              </Items>
-            </Content>
-          </OpenSpan.Adapters.Web.WebBase.Controls.WebPage>
-          <OpenSpan.Adapters.Web.WebBase.Controls.WebPage Name="LinkedIn_Login_Sign_in__LinkedIn" Id="WebPage-8DA4884AE3404C1">
-            <DummyPropertyToDetectReplaceUndo Value="0" />
-            <ForwardObjectExplorerEvent Value="True" />
-            <IsGlobal Value="True" />
-            <MatchingIndex Value="0" />
-            <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlDocumentTarget, OpenSpan.Adapters.Web.WebBase" />
-            <Content Name="Controls">
-              <Items>
-                <OpenSpan.Adapters.Web.WebBase.Controls.Form Name="Email_or_PhonePasswordshowForgot_pa" Id="Form-8DA4884AE2A5246">
-                  <DummyPropertyToDetectReplaceUndo Value="0" />
-                  <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="1" />
-                  <TagName Value="FORM" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlFormElementTarget, OpenSpan.Adapters.Web.WebBase" />
-                  <UseElementId Value="False" />
-                  <Content Name="Controls">
-                    <Items>
-                      <OpenSpan.Adapters.Web.WebBase.Controls.TextBox Name="session_key" Id="TextBox-8DA4884AE1E7E02">
-                        <DummyPropertyToDetectReplaceUndo Value="0" />
-                        <ElementId Value="username" />
-                        <ForwardObjectExplorerEvent Value="True" />
-                        <MatchingIndex Value="1" />
-                        <TagName Value="INPUT" />
-                        <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlInputTextElementTarget, OpenSpan.Adapters.Web.WebBase" />
-                        <UseElementId Value="True" />
-                        <Content Name="MatchRules">
-                          <Items>
-                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule10" Id="VirtualPropertyMatchRule-8DA4884AE504DDE">
-                              <PropertyName Value="type" />
-                              <Text Value="Simple|True|(User Culture)|text" />
-                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule11" Id="VirtualPropertyMatchRule-8DA4884AE6516D1">
-                              <PropertyName Value="id" />
-                              <Text Value="Simple|True|(User Culture)|username" />
-                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                          </Items>
-                        </Content>
-                      </OpenSpan.Adapters.Web.WebBase.Controls.TextBox>
-                      <OpenSpan.Adapters.Web.WebBase.Controls.TextBox Name="session_password" Id="TextBox-8DA4884B0715D09">
-                        <DummyPropertyToDetectReplaceUndo Value="0" />
-                        <ElementId Value="password" />
-                        <ForwardObjectExplorerEvent Value="True" />
-                        <MatchingIndex Value="15" />
-                        <TagName Value="INPUT" />
-                        <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlInputPasswordElementTarget, OpenSpan.Adapters.Web.WebBase" />
-                        <UseElementId Value="True" />
-                        <Content Name="MatchRules">
-                          <Items>
-                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule12" Id="VirtualPropertyMatchRule-8DA4884B07B9756">
-                              <PropertyName Value="type" />
-                              <Text Value="Simple|True|(User Culture)|password" />
-                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule13" Id="VirtualPropertyMatchRule-8DA4884B0862778">
-                              <PropertyName Value="id" />
-                              <Text Value="Simple|True|(User Culture)|password" />
-                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                          </Items>
-                        </Content>
-                      </OpenSpan.Adapters.Web.WebBase.Controls.TextBox>
-                      <OpenSpan.Adapters.Web.WebBase.Controls.BasicButton Name="Sign_in" Id="BasicButton-8DA4884B2A20367">
-                        <DummyPropertyToDetectReplaceUndo Value="0" />
-                        <ForwardObjectExplorerEvent Value="True" />
-                        <MatchingIndex Value="0" />
-                        <TagName Value="BUTTON" />
-                        <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlButtonElementTarget, OpenSpan.Adapters.Web.WebBase" />
-                        <UseElementId Value="False" />
-                        <Content Name="MatchRules">
-                          <Items>
-                            <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule14" Id="VirtualPropertyMatchRule-8DA4884B2B355B1">
-                              <PropertyName Value="type" />
-                              <Text Value="Simple|True|(User Culture)|submit" />
-                            </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                          </Items>
-                        </Content>
-                      </OpenSpan.Adapters.Web.WebBase.Controls.BasicButton>
-                    </Items>
-                  </Content>
-                  <Content Name="MatchRules">
-                    <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule9" Id="VirtualPropertyMatchRule-8DA4884AE4700AA">
-                        <PropertyName Value="action" />
-                        <Text Value="Simple|True|(User Culture)|https://www.linkedin.com/checkpoint/lg/login-submit" />
-                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                    </Items>
-                  </Content>
-                </OpenSpan.Adapters.Web.WebBase.Controls.Form>
-              </Items>
-            </Content>
-            <Content Name="MatchRules">
-              <Items>
-                <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule7" Id="VirtualPropertyMatchRule-8DA4884AE37E098">
-                  <PropertyName Value="url" />
-                  <Text Value="Simple|True|(User Culture)|https://www.linkedin.com/checkpoint/rm/sign-in-another-account?fromSignIn=true&amp;trk=guest_homepage-basic_nav-header-signin" />
-                </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule8" Id="VirtualPropertyMatchRule-8DA4884AE3D9113">
-                  <PropertyName Value="title" />
-                  <Text Value="Simple|True|(User Culture)|LinkedIn Login, Sign in | LinkedIn" />
-                </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-              </Items>
-            </Content>
-          </OpenSpan.Adapters.Web.WebBase.Controls.WebPage>
           <OpenSpan.Adapters.Web.WebBase.Controls.WebPage Name="Feed__LinkedIn" Id="WebPage-8DA55605F038990">
             <DummyPropertyToDetectReplaceUndo Value="0" />
             <ForwardObjectExplorerEvent Value="True" />
@@ -231,15 +174,7 @@
             <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlDocumentTarget, OpenSpan.Adapters.Web.WebBase" />
             <Content Name="Controls">
               <Items>
-                <OpenSpan.Adapters.Web.WebBase.Controls.Link Name="My_Network" Id="Link-8DA55605EAD5C93">
-                  <DummyPropertyToDetectReplaceUndo Value="0" />
-                  <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="2" />
-                  <TagName Value="A" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlAnchorElementTarget, OpenSpan.Adapters.Web.WebBase" />
-                  <UseElementId Value="False" />
-                </OpenSpan.Adapters.Web.WebBase.Controls.Link>
-                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="Name" Id="WebControl-8DA5560E7D8D2DB">
+                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="UserName" Id="WebControl-8DA5560E7D8D2DB">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
                   <ForwardObjectExplorerEvent Value="True" />
                   <MatchingIndex Value="25" />
@@ -248,9 +183,9 @@
                   <UseElementId Value="False" />
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule20" Id="VirtualPropertyMatchRule-8DA5560E847ED5D">
-                        <PropertyName Value="openspan_path" />
-                        <Text Value="Simple|True|(User Culture)|SPAN,A,DIV,SECTION,DIV,LI,UL,LI,UL,MAIN,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,BODY,HTML" />
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule7" Id="VirtualPropertyMatchRule-8DA56321247AAAE">
+                        <PropertyName Value="classname" />
+                        <Text Value="Simple|True|(User Culture)|discover-person-follow-card__name t-16 t-black t-bold" />
                       </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
                     </Items>
                   </Content>
@@ -264,61 +199,63 @@
                   <UseElementId Value="False" />
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule21" Id="VirtualPropertyMatchRule-8DA5560EA37EFCE">
-                        <PropertyName Value="openspan_path" />
-                        <Text Value="Simple|True|(User Culture)|SPAN,A,DIV,SECTION,DIV,LI,UL,LI,UL,MAIN,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,BODY,HTML" />
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule6" Id="VirtualPropertyMatchRule-8DA5631DD4C8090">
+                        <PropertyName Value="classname" />
+                        <Text Value="Simple|True|(User Culture)|discover-person-follow-card__occupation t-14 t-black--light t-normal" />
                       </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.WebBase.Controls.WebControl>
-                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="Follow" Id="WebControl-8DA55685916CB5A">
+                <OpenSpan.Adapters.Web.WebBase.Controls.BasicButton Name="Follow" Id="BasicButton-8DA561DB670B6BB">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
+                  <ElementId Value="ember1220" />
                   <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="28" />
-                  <TagName Value="SPAN" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                  <MatchingIndex Value="13" />
+                  <TagName Value="BUTTON" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlButtonElementTarget, OpenSpan.Adapters.Web.WebBase" />
                   <UseElementId Value="False" />
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule18" Id="VirtualPropertyMatchRule-8DA55685993F294">
-                        <PropertyName Value="openspan_path" />
-                        <Text Value="Simple|True|(User Culture)|SPAN,BUTTON,DIV,DIV,SECTION,DIV,LI,UL,LI,UL,MAIN,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,BODY,HTML" />
-                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualAttributeMatchRule Name="virtualAttributeMatchRule1" Id="VirtualAttributeMatchRule-8DA561DC7EC201F">
+                        <AttributeName Value="aria-label" />
+                        <Text Value="Contains|True|(User Culture)|Follow" />
+                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualAttributeMatchRule>
                     </Items>
                   </Content>
-                </OpenSpan.Adapters.Web.WebBase.Controls.WebControl>
-                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="Cancel" Id="WebControl-8DA556902FE9BE3">
+                </OpenSpan.Adapters.Web.WebBase.Controls.BasicButton>
+                <OpenSpan.Adapters.Web.WebBase.Controls.BasicButton Name="Remove" Id="BasicButton-8DA561E2FA91B66">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
+                  <ElementId Value="ember270" />
                   <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="29" />
-                  <TagName Value="path" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                  <MatchingIndex Value="12" />
+                  <TagName Value="BUTTON" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlButtonElementTarget, OpenSpan.Adapters.Web.WebBase" />
                   <UseElementId Value="False" />
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule17" Id="VirtualPropertyMatchRule-8DA556903825F8E">
-                        <PropertyName Value="openspan_path" />
-                        <Text Value="Simple|True|(User Culture)|path,svg,LI-ICON,BUTTON,SECTION,DIV,LI,UL,LI,UL,MAIN,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,BODY,HTML" />
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule5" Id="VirtualPropertyMatchRule-8DA561E81033442">
+                        <PropertyName Value="innertext" />
+                        <Text Value="Contains|True|(User Culture)|Remove" />
                       </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
                     </Items>
                   </Content>
-                </OpenSpan.Adapters.Web.WebBase.Controls.WebControl>
-                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="No-of-connection" Id="WebControl-8DA556AA9234D7E">
+                </OpenSpan.Adapters.Web.WebBase.Controls.BasicButton>
+                <OpenSpan.Adapters.Web.WebBase.Controls.Link Name="My_Network" Id="Link-8DA5631BBF6198F">
                   <DummyPropertyToDetectReplaceUndo Value="0" />
                   <ForwardObjectExplorerEvent Value="True" />
-                  <MatchingIndex Value="67" />
-                  <TagName Value="DIV" />
-                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                  <MatchingIndex Value="2" />
+                  <TagName Value="A" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlAnchorElementTarget, OpenSpan.Adapters.Web.WebBase" />
                   <UseElementId Value="False" />
                   <Content Name="MatchRules">
                     <Items>
-                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule19" Id="VirtualPropertyMatchRule-8DA556AA9CBFE84">
-                        <PropertyName Value="openspan_path" />
-                        <Text Value="Simple|True|(User Culture)|DIV,DIV,A,DIV,DIV,SECTION,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,DIV,BODY,HTML" />
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule4" Id="VirtualPropertyMatchRule-8DA5631BC052FBE">
+                        <PropertyName Value="innerText" />
+                        <Text Value="Simple|True|(User Culture)|&#xA;  &#xA;  &#xA;    &#xA;    &#xA;  &#xA;&#xA;&#xA;  &#xA;&#xA;&#xA;  &#xA;    My Network&#xA;  &#xA;" />
                       </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
                     </Items>
                   </Content>
-                </OpenSpan.Adapters.Web.WebBase.Controls.WebControl>
+                </OpenSpan.Adapters.Web.WebBase.Controls.Link>
               </Items>
             </Content>
             <Content Name="MatchRules">
@@ -326,10 +263,6 @@
                 <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule15" Id="VirtualPropertyMatchRule-8DA55605F26370E">
                   <PropertyName Value="url" />
                   <Text Value="Simple|True|(User Culture)|https://www.linkedin.com/feed/" />
-                </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
-                <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule16" Id="VirtualPropertyMatchRule-8DA55605F41AB0F">
-                  <PropertyName Value="title" />
-                  <Text Value="Simple|True|(User Culture)|Feed | LinkedIn" />
                 </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
               </Items>
             </Content>
