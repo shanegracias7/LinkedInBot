@@ -249,6 +249,10 @@
       <SubType>Component</SubType>
       <Id>Automator-8DA556C3F05EB22</Id>
     </Compile>
+    <Compile Include="Automation\SendEmail.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8DA56F95781E0E8</Id>
+    </Compile>
     <Compile Include="Automation\StoreDataInExcel.os">
       <SubType>Component</SubType>
       <Id>Automator-8DA56A038C479A2</Id>

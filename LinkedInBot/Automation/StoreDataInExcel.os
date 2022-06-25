@@ -258,8 +258,8 @@
             <LinkPoints>
               <Point value="291, 178" />
               <Point value="301, 178" />
-              <Point value="327, 178" />
-              <Point value="327, 203" />
+              <Point value="301, 178" />
+              <Point value="301, 203" />
               <Point value="353, 203" />
               <Point value="363, 203" />
             </LinkPoints>
@@ -270,8 +270,9 @@
             <LinkPoints>
               <Point value="291, 205" />
               <Point value="301, 205" />
-              <Point value="329, 205" />
-              <Point value="329, 173" />
+              <Point value="301, 205" />
+              <Point value="301, 172" />
+              <Point value="379, 172" />
               <Point value="379, 173" />
               <Point value="379, 183" />
             </LinkPoints>
@@ -330,9 +331,6 @@
         <Comments />
         <SubGraphs />
       </AutomationDocument>
-      <DocumentPosition Value="Binary">
-        <Binary>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAFkHFQwAAAAAL</Binary>
-      </DocumentPosition>
       <DocumentScale Value="0.7350919" />
       <Content Name="DynamicMembers">
         <Items>
@@ -529,7 +527,7 @@
       </Content>
     </OpenSpan.Automation.ConnectableMethod>
     <OpenSpan.Script.Expression.NumericExpression Name="numericExpression1" Id="NumericExpression-8DA56A5ED88031A">
-      <Expression Value="A+1" />
+      <Expression Value="A+2" />
       <Scope Value="Local" Extended="True" />
       <Valid Value="True" />
       <Content Name="DynamicMembers">

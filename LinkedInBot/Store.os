@@ -14,6 +14,7 @@
       <Assembly Value="OpenSpan.ApplicationFramework, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Controls, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
+      <Assembly Value="OpenSpan.Office, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Office.Excel, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Runtime.Core, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Script, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
@@ -39,6 +40,8 @@
             <param name="str" aliasName="str" paramType="System.String" isIn="False" isOut="False" position="0" />
           </OpenSpan.DynamicMembers.DynamicMethodInfo>
           <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="SuccessMail" aliasName="SuccessMail" visibility="DefaultOn" source="" blockTypeName="" returnType="System.Void" />
+          <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="GetAttachmentFileNames" aliasName="GetAttachmentFileNames" visibility="DefaultOn" source="" blockTypeName="" returnType="System.Collections.Generic.List`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" />
+          <OpenSpan.DynamicMembers.DynamicMethodInfo dynamicType="Method" name="Maintenance" aliasName="Maintenance" visibility="DefaultOn" source="" blockTypeName="" returnType="System.Void" />
         </Items>
       </Content>
     </OpenSpan.Script.Custom.Script>

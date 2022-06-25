@@ -22,11 +22,12 @@ namespace Dynamic.Script_8DA56D28018F327
 	[OpenSpan.Design.ComponentIdentityAttribute("Script-8DA56D28018F327")]
 	public sealed class Script
 	{
+        public static string LinkedInDir = "C:\\Users\\shane.gracias\\LinkedinBot\\"; 
+
         public  void RenamePDF(string defaultFileName, string username)
         {
-            username = RemoveBlankSpace(username);
-            string fileName = "C:\\Users\\shane.gracias\\LinkedinBot\\";
-            fileName = fileName + username + ".pdf";
+            username = RemoveBlankSpace(username); 
+            string fileName = LinkedInDir + username + ".pdf";
             if (System.IO.File.Exists(defaultFileName))
             {
                 System.IO.File.Move(defaultFileName, fileName);
@@ -35,7 +36,6 @@ namespace Dynamic.Script_8DA56D28018F327
         public string RemoveBlankSpace(string str)
         {
             str= str.Replace(" ", String.Empty);
-            // remove/n
             str = str.Replace("\n", String.Empty);
             return str;
         }
@@ -65,6 +65,32 @@ namespace Dynamic.Script_8DA56D28018F327
                 throw new Exception("Error while sending success email:" + ex.Message);
             }
         }
+
+        public  List<string> GetAttachmentFileNames()
+        {
+            List<string> Filenames = new List<string>();
+            string[] files = Directory.GetFiles(LinkedInDir);
+            string Filename = string.Empty;
+            foreach (string filePath in files)
+            {
+                //Filename = Path.GetFileName(filePath);
+                Filenames.Add(filePath);
+            }
+
+            return Filenames;
+        }
+        public void Maintenance()
+        {
+            string[] files = Directory.GetFiles(LinkedInDir);
+            foreach (string filePath in files)
+            {
+                System.IO.File.Delete(filePath);
+            }
+            System.IO.File.Copy("C:\\Users\\shane.gracias\\Desktop\\Connection_Record.xlsx", "C:\\Users\\shane.gracias\\LinkedinBot\\Connection_Record.xlsx");
+        }
+
+
+
 
     }
 }
