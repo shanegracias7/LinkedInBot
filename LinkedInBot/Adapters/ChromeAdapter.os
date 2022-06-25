@@ -256,13 +256,47 @@
                     </Items>
                   </Content>
                 </OpenSpan.Adapters.Web.WebBase.Controls.Link>
+                <OpenSpan.Adapters.Web.WebBase.Controls.BasicButton Name="More" Id="BasicButton-8DA5635AFD9326D">
+                  <DummyPropertyToDetectReplaceUndo Value="0" />
+                  <ElementId Value="ember1097" />
+                  <ForwardObjectExplorerEvent Value="True" />
+                  <MatchingIndex Value="12" />
+                  <TagName Value="BUTTON" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlButtonElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                  <UseElementId Value="False" />
+                  <Content Name="MatchRules">
+                    <Items>
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule9" Id="VirtualPropertyMatchRule-8DA5635C4C508A4">
+                        <PropertyName Value="ariaLabel" />
+                        <Text Value="Simple|True|(User Culture)|More actions" />
+                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                    </Items>
+                  </Content>
+                </OpenSpan.Adapters.Web.WebBase.Controls.BasicButton>
+                <OpenSpan.Adapters.Web.WebBase.Controls.WebControl Name="Save_to_PDF" Id="WebControl-8DA5635ED79CF70">
+                  <DummyPropertyToDetectReplaceUndo Value="0" />
+                  <ElementId Value="ember1100" />
+                  <ForwardObjectExplorerEvent Value="True" />
+                  <MatchingIndex Value="102" />
+                  <TagName Value="DIV" />
+                  <TargetTypeString Value="OpenSpan.Adapters.Web.WebBase.Targets.VirtualHtmlElementTarget, OpenSpan.Adapters.Web.WebBase" />
+                  <UseElementId Value="False" />
+                  <Content Name="MatchRules">
+                    <Items>
+                      <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule10" Id="VirtualPropertyMatchRule-8DA5635FD8F9FEB">
+                        <PropertyName Value="innertext" />
+                        <Text Value="Contains|True|(User Culture)|&#xA;      &#xA;  &#xA;&#xA;    Save to PDF&#xA;    " />
+                      </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
+                    </Items>
+                  </Content>
+                </OpenSpan.Adapters.Web.WebBase.Controls.WebControl>
               </Items>
             </Content>
             <Content Name="MatchRules">
               <Items>
                 <OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule Name="virtualPropertyMatchRule15" Id="VirtualPropertyMatchRule-8DA55605F26370E">
                   <PropertyName Value="url" />
-                  <Text Value="Simple|True|(User Culture)|https://www.linkedin.com/feed/" />
+                  <Text Value="Contains|True|(User Culture)|https://www.linkedin.com" />
                 </OpenSpan.Adapters.Web.WebBase.MatchRules.VirtualPropertyMatchRule>
               </Items>
             </Content>

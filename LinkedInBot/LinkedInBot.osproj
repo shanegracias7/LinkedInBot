@@ -72,6 +72,10 @@
       <HintPath>C:\Program Files (x86)\Pegasystems\Pega Robot Studio Plug-In\GemBox.Spreadsheet.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a">
+      <HintPath>C:\Program Files (x86)\Pegasystems\Pega Robot Studio Plug-In\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="OpenSpan.Adapters">
       <Private>False</Private>
       <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Adapters.dll</HintPath>
@@ -100,6 +104,14 @@
       <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Controls.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="OpenSpan.Events, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Events.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Interactions, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Interactions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="OpenSpan.OCR, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.OCR.dll</HintPath>
       <Private>False</Private>
@@ -116,8 +128,24 @@
       <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Recording.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="OpenSpan.Script, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Script.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="OpenSpan.Security, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Security.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Server.Client, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Server.Client.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.Threading, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.Threading.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenSpan.TranslatorIpc, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\OpenSpan.TranslatorIpc.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OpenSpan.Virtual.Interfaces, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
@@ -132,12 +160,24 @@
       <HintPath>$(PEGA_STUDIO_PATH)\Pega.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Pega.IPC.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.IPC.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.IPC.Services, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.IPC.Services.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Pega.Remoting, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <HintPath>$(PEGA_STUDIO_PATH)\Pega.Remoting.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Pega.Scout.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <HintPath>$(PEGA_STUDIO_PATH)\Pega.Scout.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.Scout.Remoting.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.Scout.Remoting.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Pega.Service.Remoting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
@@ -148,8 +188,16 @@
       <HintPath>$(PEGA_STUDIO_PATH)\Pega.SharedMemory.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Pega.Utilities.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.Utilities.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Pega.Windows.Broker.Interop, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
       <HintPath>$(PEGA_STUDIO_PATH)\Pega.Windows.Broker.Interop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Pega.WinQueue.Interop, Version=10.0.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e">
+      <HintPath>$(PEGA_STUDIO_PATH)\Pega.WinQueue.Interop.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System">
@@ -185,6 +233,14 @@
       <SubType>Component</SubType>
       <Id>UniversalWebAdapter-8DA4883BC275FE4</Id>
     </Compile>
+    <Compile Include="Adapters\WindowsForm.os">
+      <SubType>Component</SubType>
+      <Id>DesignForm-8DA569CD4CD276D</Id>
+    </Compile>
+    <Compile Include="Automation\DownloadResume.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8DA5698514323A1</Id>
+    </Compile>
     <Compile Include="Automation\Follow.os">
       <SubType>Component</SubType>
       <Id>Automator-8DA556C465DA766</Id>
@@ -193,9 +249,21 @@
       <SubType>Component</SubType>
       <Id>Automator-8DA556C3F05EB22</Id>
     </Compile>
+    <Compile Include="Automation\StoreDataInExcel.os">
+      <SubType>Component</SubType>
+      <Id>Automator-8DA56A038C479A2</Id>
+    </Compile>
     <Compile Include="Automation\Terminate.os">
       <SubType>Component</SubType>
       <Id>Automator-8DA56305749946E</Id>
+    </Compile>
+    <Compile Include="Store.os">
+      <SubType>Component</SubType>
+      <Id>GlobalContainer-8DA569863AC8402</Id>
+    </Compile>
+    <Compile Include="Store.script.cs">
+      <DependentUpon>Store.os</DependentUpon>
+      <Id>Script-8DA56D28018F327</Id>
     </Compile>
     <Folder Include="Adapters" />
     <Folder Include="Automation" />
