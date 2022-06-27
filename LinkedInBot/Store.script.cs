@@ -30,7 +30,7 @@ namespace Dynamic.Script_8DA56D28018F327
             string fileName = LinkedInDir + username + ".pdf";
             if (System.IO.File.Exists(defaultFileName))
             {
-                System.IO.File.Move(defaultFileName, fileName);
+                System.IO.File.Copy(defaultFileName, fileName);
             }
         }
         public string RemoveBlankSpace(string str)

@@ -3,12 +3,12 @@
     <Type Value="OpenSpan.Automation.Automator" />
     <Assembly Value="OpenSpan.Automation" />
     <AssemblyReferences>
-      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="OpenSpan, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Adapters.Web.WebBase, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="OpenSpan.Automation, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
-      <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
     </AssemblyReferences>
     <DynamicAssemblyReferences />
     <FileReferences />
@@ -22,8 +22,8 @@
         <Objects>
           <ConnectionBlock>
             <ConnectableUniqueId Value="Automator-8DA556C3F05EB22\EntryPoint-8DA561694B71FF4" />
-            <Left Value="60" />
-            <Top Value="100" />
+            <Left Value="63" />
+            <Top Value="102" />
             <PartID Value="8" />
           </ConnectionBlock>
           <ConnectionBlock>
@@ -61,8 +61,8 @@
           </ConnectionBlock>
           <ConnectionBlock type="OpenSpan.Automation.Design.ConnectionBlocks.MultiExitPointBlock">
             <ConnectableUniqueId Value="Automator-8DA556C3F05EB22\ExitPoint-8DA561BDB074CD6" />
-            <Left Value="1320" />
-            <Top Value="100" />
+            <Left Value="1323" />
+            <Top Value="102" />
             <PartID Value="20" />
             <Title Value="success" />
             <EventName Value="" />
@@ -93,6 +93,17 @@
             <Fittings>
               <Result Collapsed="False" ActualText="Result" />
             </Fittings>
+            <OverriddenIds />
+          </ConnectionBlock>
+          <ConnectionBlock type="OpenSpan.Automation.Design.ConnectionBlocks.EntryPointExecuteBlock">
+            <DisplayName Value="Execute" />
+            <ConnectableUniqueId Value="Automator-8DA556C3F05EB22\ConnectableMethod-8DA589173E9142B" />
+            <PartID Value="43" />
+            <Left Value="1320" />
+            <Top Value="200" />
+            <Collapsed Value="False" />
+            <WillExecute Value="True" />
+            <InstanceName Value="Terminate" />
             <OverriddenIds />
           </ConnectionBlock>
         </Objects>
@@ -140,9 +151,7 @@
               <Point value="335, 177" />
               <Point value="345, 177" />
               <Point value="348, 177" />
-              <Point value="348, 177" />
-              <Point value="380, 177" />
-              <Point value="380, 129" />
+              <Point value="348, 129" />
               <Point value="415, 129" />
               <Point value="425, 129" />
             </LinkPoints>
@@ -180,9 +189,21 @@
               <Point value="1215, 177" />
               <Point value="1225, 177" />
               <Point value="1228, 177" />
-              <Point value="1228, 118" />
-              <Point value="1312, 118" />
-              <Point value="1322, 118" />
+              <Point value="1228, 120" />
+              <Point value="1315, 120" />
+              <Point value="1325, 120" />
+            </LinkPoints>
+          </DecisionEventLink>
+          <DecisionEventLink PartID="44" Sensitive="False" Asynchronous="False" LogBeforeExecution="" LogAfterExecution="">
+            <From PartID="41" ParentMemberName="Result" DecisionValue="False" ConnectableId="Automator-8DA556C3F05EB22\ConnectableMethod-8DA5632A9D8BFFB" />
+            <To PartID="43" PortName="DoWork" PortType="Method" ConnectableId="Automator-8DA556C3F05EB22\ConnectableMethod-8DA589173E9142B" MemberComponentId="Automator-8DA556C3F05EB22\ConnectableMethod-8DA589173E9142B" />
+            <LinkPoints>
+              <Point value="1215, 192" />
+              <Point value="1225, 192" />
+              <Point value="1228, 192" />
+              <Point value="1228, 229" />
+              <Point value="1315, 229" />
+              <Point value="1325, 229" />
             </LinkPoints>
           </DecisionEventLink>
         </Links>
@@ -200,8 +221,8 @@
     </OpenSpan.Automation.Automator>
     <OpenSpan.Automation.EntryPoint Name="entryPoint1" Id="EntryPoint-8DA561694B71FF4">
       <AliasName Value="Execute" />
-      <ComponentName Value="&lt;No Instance&gt;" />
-      <DisplayName Value="" />
+      <ComponentName Value="Execute" />
+      <DisplayName Value="Execute" />
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OpenSpan.Automation.EntryPoint" />
       <InstanceUniqueId Value="Automator-8DA556C3F05EB22\EntryPoint-8DA561694B71FF4" />
@@ -216,7 +237,7 @@
       </Content>
     </OpenSpan.Automation.EntryPoint>
     <OpenSpan.Automation.ConnectableMethod Name="connectableMethod1" Id="ConnectableMethod-8DA56199B2375B8">
-      <ComponentName Value="__________Sign_in________" />
+      <ComponentName Value="Sign_in" />
       <DisplayName Value="PerformClick" />
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OpenSpan.Adapters.Web.WebBase.Controls.BasicButton" />
@@ -240,7 +261,7 @@
       </Content>
     </OpenSpan.Automation.ConnectableMethod>
     <OpenSpan.Automation.ConnectableProperties Name="connectableProperties1" Id="ConnectableProperties-8DA5619A216A7F9">
-      <ComponentName Value="session_key1" />
+      <ComponentName Value="sessionUsername" />
       <DefaultValues Value="Text=linkedshane@gmail.com" />
       <DisplayName Value="Properties" />
       <ExceptionsHandled Value="False" />
@@ -258,7 +279,7 @@
       </Content>
     </OpenSpan.Automation.ConnectableProperties>
     <OpenSpan.Automation.ConnectableProperties Name="connectableProperties2" Id="ConnectableProperties-8DA5619A54BDB87">
-      <ComponentName Value="session_password1" />
+      <ComponentName Value="Password" />
       <DefaultValues Value="Text=linkedINbot1" />
       <DisplayName Value="Properties" />
       <ExceptionsHandled Value="False" />
@@ -290,7 +311,7 @@
       </Content>
     </OpenSpan.Automation.ExitPoint>
     <OpenSpan.Automation.ConnectableMethod Name="connectableMethod4" Id="ConnectableMethod-8DA5630FABC9C3D">
-      <ComponentName Value="session_password1" />
+      <ComponentName Value="Password" />
       <DisplayName Value="WaitForCreate" />
       <ExceptionsHandled Value="False" />
       <InstanceTypeName Value="OpenSpan.Adapters.Web.WebBase.Controls.TextBox" />
@@ -364,6 +385,43 @@
                       <ParamName Value="milliseconds" />
                       <Position Value="0" />
                       <TypeName Value="System.Int32" />
+                    </OpenSpan.Automation.ParameterPrototype>
+                  </Items>
+                </Content>
+              </OpenSpan.Automation.MethodSignature>
+            </Content>
+          </OpenSpan.Automation.MemberPrototype>
+        </Items>
+      </Content>
+    </OpenSpan.Automation.ConnectableMethod>
+    <OpenSpan.Automation.ConnectableMethod Name="connectableMethod3" Id="ConnectableMethod-8DA589173E9142B">
+      <ComponentName Value="Terminate" />
+      <DisplayName Value="Execute" />
+      <ExceptionsHandled Value="False" />
+      <InstanceTypeName Value="OpenSpan.Automation.Automator" />
+      <InstanceUniqueId Value="Automator-8DA56305749946E" />
+      <MemberDetails Value=".Execute() Method" />
+      <ParamsLength Value="0" />
+      <SerializedParamsDefaultValues Value="" />
+      <Content Name="MemberPrototypes">
+        <Items>
+          <OpenSpan.Automation.MemberPrototype>
+            <MemberName Value="_EntryPointExecute" />
+            <MemberType Value="Method" />
+            <TypeName Value="System.Void" />
+            <Content Name="Signature">
+              <OpenSpan.Automation.MethodSignature>
+                <ReturnType Value="System.Void" />
+                <Content Name="ParameterPrototype">
+                  <Items>
+                    <OpenSpan.Automation.ParameterPrototype>
+                      <CanRead Value="False" />
+                      <CanWrite Value="True" />
+                      <DefaultSet Value="True" />
+                      <DefaultValue Value="Failed to login" />
+                      <ParamName Value="param1" />
+                      <Position Value="0" />
+                      <TypeName Value="System.String" />
                     </OpenSpan.Automation.ParameterPrototype>
                   </Items>
                 </Content>

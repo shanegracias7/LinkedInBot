@@ -4,9 +4,9 @@
     <Assembly Value="OpenSpan" />
     <AssemblyReferences>
       <Assembly Value="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-      <Assembly Value="OpenSpan, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
       <Assembly Value="System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
       <Assembly Value="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <Assembly Value="OpenSpan, Version=19.1.0.0, Culture=neutral, PublicKeyToken=f5db91edc02d8c5e" />
     </AssemblyReferences>
     <DynamicAssemblyReferences />
     <FileReferences />
@@ -21,6 +21,14 @@
       <StartPosition Value="CenterScreen" />
       <Content Name="Controls">
         <Items>
+          <System.Windows.Forms.Button Name="button2" Id="Button-8DA584869CAA013">
+            <ImageKey Value="(none)" />
+            <Location Value="184, 84" />
+            <Size Value="75, 23" />
+            <TabIndex Value="3" />
+            <Text Value="stop the bot" />
+            <UseVisualStyleBackColor Value="True" />
+          </System.Windows.Forms.Button>
           <System.Windows.Forms.TextBox Name="NoOfRecords" Id="TextBox-8DA569CE77E2F68">
             <Location Value="40, 55" />
             <Size Value="100, 20" />
